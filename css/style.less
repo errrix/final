@@ -122,7 +122,7 @@ header {
 				height: 63px;
 				box-shadow: 0 2px 0 #c1412e;
 				background-color: #e94e38;
-				border-radius: 24px;
+				border-radius: 34px;
 				box-sizing: border-box;
 				margin-top: 27px;
 				line-height: 18px;
@@ -158,7 +158,7 @@ header {
 			color: #fff;
 			height: 50px;
 			border: 1px solid rgba(255, 255, 255, 0.2);
-			border-radius: 19px;
+			border-radius: 26px;
 			width: 221px;
 			background: transparent;
 			&:active, &:focus {
@@ -754,25 +754,98 @@ footer {
 			.link(gotham medium, 24px, 24px, #fff);
 		}
 		form {
+			position: relative;
 			margin-top: 46px;
+			:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 24px;
+				left: 280px;
+				background: url(../images/fotter-input-mail.png) center no-repeat;
+				width: 18px;
+				height: 15px;
+			}
 			input[type=text] {
+				padding-left: 70px;
+				box-sizing: border-box;
 				outline: none;
 				width: 495px;
-				height: 62px;
+				height: 60px;
 				border: 1px solid rgba(255, 255, 255, 0.2);
 				background-color: #4c5359;
-				border-radius: 23px;
+				border-radius: 34px;
+				vertical-align: 1px;
+				.link(gotham book, 18px, 18px, #fff);
+				text-transform: none;
+					&::-webkit-input-placeholder {
+					.link(gotham book, 18px, 18px, #fff);
+					text-transform: none;
+				}
 			}
 			input[type=submit] {
 				margin-left: -130px;
 				width: 120px;
-				height: 52px;
+				height: 48px;
+				vertical-align: 2px;
 				box-shadow: 0 2px 0 #c1412e;
 				background-color: #e94e38;
-				border-radius: 22px;
+				border-radius: 26px;
 				border: none;
 				outline: none;
+				.link(gotham medium, 14px, 48px, #fff);
+				&:hover {
+					cursor: pointer;
+				}
 			}
+		}
+	}
+}
+.footer-nav {
+	margin-top: 56px;
+	border-top: 2px solid #3c3b3b;
+	padding-top: 42px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-start;
+	.footer-nav-link-block {
+		width: 33.333%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		a {
+			.link(gotham book, 14px, 14px, #c0bebc);
+			margin-bottom: 16px;
+			text-transform: none;
+			&:first-child {
+				.link(gotham medium, 16px, 16px, #fff);
+				margin-bottom: 25px;
+				border-bottom: 1px solid #595551;
+				text-transform: none;
+			}
+		}
+	}
+	.footer-nav-link-social{
+		width: 33.333%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		&>a:first-child {
+			.link(gotham medium, 16px, 16px, #fff);
+			border-bottom: 1px solid #595551;
+			text-transform: none;
+		}
+		div {
+			margin-top: 26px;
+			&>a {
+				margin-right: 20px;
+				border: none;
+			}
+		}
+		a:last-child {
+			margin-top: 68px;
+			.link(gotham book, 14px, 14px, #fff);
+			text-transform: none;
 		}
 	}
 }
