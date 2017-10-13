@@ -26,10 +26,7 @@ header {
 	min-width: 1000px;
 	margin: 0 auto;
 	min-height: 74px;
-	font-family: "Gotham Medium";
-	font-size: 14px;
-	line-height: 24px;
-	text-transform: uppercase;
+	.link(gotham medium, 14px, 24px, #96a6a7);
 	min-width: 1000px;
 	box-sizing: border-box;
 	display: flex;
@@ -42,7 +39,7 @@ header {
 			margin-left: 150px;
 			margin-top: 14px;
 			@media (max-width: 1279px) and (min-width: 1001px) {
-			margin-left: 3%;
+				margin-left: 3%;
 			}
 			@media (max-width: 1000px) {
 				margin-left: 0;
@@ -81,10 +78,10 @@ header {
 		padding-top: 22px;
 		padding-left: 40px;
 		box-sizing: border-box;
-		color: #ffffff;
+		color: #fff;
 		flex-grow: 2;
 		@media (max-width: 1279px) {
-				width: auto;
+			width: auto;
 		}
 		&::before {
 			content: "";
@@ -106,16 +103,12 @@ header {
 	box-sizing: border-box;
 	text-align: center;
 	text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
-	color: #ffffff;
-	font-family: Gotham Medium;
-	font-size: 30px;
-	line-height: 48px;
+	.link(gotham medium, 30px, 48px, #fff);
+	text-transform: none;
 	.wrapper{
 		width: 490px;
 		&>a {
-			color: #ffffff;
-			font-size: 18px;
-			text-transform: uppercase;
+			.link(gotham medium, 18px,18px, #fff);
 			&:last-child {
 				display: inline-block;
 				padding: 25px 32px;

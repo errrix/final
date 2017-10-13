@@ -18,10 +18,11 @@ header {
   width: 1280px;
   margin: 0 auto;
   min-height: 74px;
-  font-family: "Gotham Medium";
+  font-family: gotham medium;
   font-size: 14px;
-  line-height: 24px;
   text-transform: uppercase;
+  line-height: 24px;
+  color: #96a6a7;
   min-width: 1000px;
   box-sizing: border-box;
   display: flex;
@@ -82,7 +83,7 @@ header .login {
   padding-top: 22px;
   padding-left: 40px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #fff;
   flex-grow: 2;
 }
 @media (max-width: 1279px) {
@@ -108,18 +109,22 @@ header .login::before {
   box-sizing: border-box;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
-  color: #ffffff;
-  font-family: Gotham Medium;
+  font-family: gotham medium;
   font-size: 30px;
+  text-transform: uppercase;
   line-height: 48px;
+  color: #ffffff;
+  text-transform: none;
 }
 .jumbotron .wrapper {
   width: 490px;
 }
 .jumbotron .wrapper > a {
-  color: #ffffff;
+  font-family: gotham medium;
   font-size: 18px;
   text-transform: uppercase;
+  line-height: 18px;
+  color: #ffffff;
 }
 .jumbotron .wrapper > a:last-child {
   display: inline-block;
